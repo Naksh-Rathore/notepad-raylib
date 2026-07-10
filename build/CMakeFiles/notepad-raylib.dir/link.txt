@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/notepad-raylib.dir/link.d "CMakeFiles/notepad-raylib.dir/src/main.c.o" -o notepad-raylib  _deps/raylib-build/raylib/libraylib.a -lm -lpthread /usr/lib64/libOpenGL.so /usr/lib64/libGLX.so /usr/lib64/librt.a -lm -ldl
