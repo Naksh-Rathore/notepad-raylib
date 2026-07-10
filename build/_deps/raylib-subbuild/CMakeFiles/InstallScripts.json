@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/nakshrathore/programming/notepad-raylib/build/_deps/raylib-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
