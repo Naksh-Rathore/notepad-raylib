@@ -33,7 +33,7 @@ int main(int argc, char **argv) {
         BeginDrawing();
 
             ClearBackground(GRAY);
-            Board_draw(&board, (screenWidth / 2.0f) - (board.boardWidth / 2.0f), (screenHeight / 2.0f) - (board.boardHeight / 2.0f), RAYWHITE);
+            Board_draw(&board, (GetScreenWidth() / 2.0f) - (board.boardWidth / 2.0f), (GetScreenHeight() / 2.0f) - (board.boardHeight / 2.0f), RAYWHITE);
             ToolBox_draw(&toolbox, LIGHTGRAY);
 
         EndDrawing();
