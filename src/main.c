@@ -6,14 +6,18 @@
 
 int main(int argc, char **argv) {
 
-    int screenWidth = 1920, screenHeight = 1080;
+    int screenWidth = 0, screenHeight = 0;
 
-    if (argc == 2 && strcmp(argv[1], "--fullscreen") == 0) {
+    #ifndef NDEBUG
+    if (argc == 2 && strcmp(argv[1], "--windowed") == 0) {
+        screenWidth = 1920;
+        screenHeight = 1080;
+    }
+    #endif
+
+    if (argc == 2 && strcmp(argv[1], "--windowed") != 0)
         SetConfigFlags(FLAG_FULLSCREEN_MODE);
 
-        screenWidth = 0;
-        screenHeight = 0;
-    }
 
     InitWindow(screenWidth, screenHeight, "Notepad");
     SetTargetFPS(60);
